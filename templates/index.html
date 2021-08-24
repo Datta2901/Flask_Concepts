@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <!-- Link CSS File -->
+<link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+<!-- Link JS FIle -->
+<script type="text/javascript" src="{{ url_for('static',filename='script/script.js') }}"></script>
+
+</head>
+<body>
+<center>
+<h2>HTML Forms</h2>
+
+<form action="/submit" method='post'>
+  
+    <label for="DSA">DSA:</label><br>
+    <input type="text" id="DSA" name="DSA" placeholder="Enter marks"><br>
+    <label for="OS">OS:</label><br>
+    <input type="text" id="OS" name="OS" placeholder="Enter marks"><br><br>
+    <label for="CV ">CV:</label><br>
+    <input type="text" id="cv" name="cv" placeholder="Enter marks"><br><br>
+    <label for="DAA" >DSA:</label><br>
+    <input type="text" id="DAA" name="DAA" placeholder="Enter marks"><br><br>
+    <input type="submit" class = "Submit" value="Submit">
+</form> 
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/submit".</p>
+<p>A basic form to understand different concepts of flask </p>
+</center>
+</body>
+</html>
